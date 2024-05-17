@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viajens</title>
+</head>
+<body>
+<h1>top 5 lugares para Viajar</h1>
+<div id="destinations">
+    <div class="destination">
+        <h2>Londres (Reino Unido)</h2>
+        <img src="Londres.jpg" alt="">
+        <p>Londres é um mundo em si. Abriga os cartões-postais como o relógio mais famoso do mundo.</p>
+    </div>
+    <div class="destination">
+        <h2>Roma (Itália)</h2>
+        <img src="roma.jpg" alt="">
+        <p>Com quase 3.000 anos de idade, Roma é cidade com um grande conjunto de arte, cultura e arquitetura à céu aberto. <br>
+
+            Abriga diversos pontos históricos imperdíveis como o Coliseu, Fonte de Trevi, Panteão, além da cidade do Vaticano</p>
+    </div>
+    <div class="destination">
+        <h2>Ilhas Maldivas (Maldivas)</h2>
+        <img src="maldivas.jpg" alt="">
+        <p>As Ilhas Maldivas são um conjunto de mais de 1.000 ilhas, localizado no Oc
+            eano Índico. O país é conhecido pelos recifes de corais, areia clara e água azul turquesa</p>
+    </div>
+    <div class="destination">
+        <h2>Nova York (Estados Unidos)</h2>
+        <img src="york.jpg" alt="">
+        <p>A cidade que nunca dorme é conhecida pelas luzes da Times Square, o parque Central Park, o edifício Empire State Building e a Estátua da Liberdade.</p>
+    </div>
+    <div class="destination">
+        <h2>Grand Canyon (Estados Unidos)</h2>
+        <img src="canyon.jpg" alt="">
+        <p>As icônicas formações naturais de rocha vermelhas, possuem mais de 445 de km de comprimento e 1,6km de profundidade, sendo percorrido pelo rio Colorado.</p>
+    </div>
+</div>
+<script>
+    const images = document.querySelectorAll('img');
+    console.log("Imagens na página:");
+    images.forEach(image => {
+        console.log(image.src);
+    });
+    const textoIncorporado = "Espero que esses destinos inspirem suas próximas aventuras! Viajar é uma experiência enriquecedora que nos permite descobrir novas culturas, paisagens e pessoas.";
+    const destinationParagraph = document.querySelector('#destinations .destination:nth-child(3) p');
+    destinationParagraph.textContent = textoIncorporado;
+</script>
+</body>
+</html>
